@@ -87,10 +87,6 @@ jobs:
     bundler_args: --without development release
     env: BEAKER_PUPPET_COLLECTION=puppet6 BEAKER_setfile=ubuntu1804-64 CHECK=beaker
     services: docker
-branches:
-  only:
-  - master
-  - /^v\d/
 notifications:
   email: false
   webhooks: https://voxpupu.li/incoming/travis
